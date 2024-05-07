@@ -8,10 +8,10 @@ st.title("MIMIC-IV FHIR Dataset Processing")
 
 # File upload section
 st.header("Upload Files")
-patient_file = st.file_uploader("Upload Patient.ndjson", type="json")
-condition_file = st.file_uploader("Upload Condition.ndjson", type="json")
-encounter_file = st.file_uploader("Upload Encounter.ndjson", type="json")
-encounter_icu_file = st.file_uploader("Upload EncounterICU.ndjson", type="json")
+patient_file = st.file_uploader("Upload Patient.ndjson", type="ndjson")
+condition_file = st.file_uploader("Upload Condition.ndjson", type="ndjson")
+encounter_file = st.file_uploader("Upload Encounter.ndjson", type="ndjson")
+encounter_icu_file = st.file_uploader("Upload EncounterICU.ndjson", type="ndjson")
 
 # Process data
 if patient_file and condition_file and (encounter_file or encounter_icu_file):
